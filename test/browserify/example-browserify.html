@@ -27,28 +27,48 @@
 				<div class="col-md-4">
 					<form name="form" ng-submit="onSubmit();">
 						<div class="form-group">
-							<label for="exampleInputEmail1">Date range</label>
-							<input type="daterangepicker" class="form-control" ng-model="model.daterange" placeholder="Enter a date range"
-								export="myDaterangepicker" options="daterangeOptions"
-								on="eventObject" />
+							<label for="dateId1">Date (input)</label>
+							<input id="dateId1" type="text" class="form-control" datepicker ng-model="model.date1" placeholder="Enter a date"
+								export="myDatepicker" options="dateOptions" />
+						</div>
+						<div class="form-group">
+							<label for="dateId2">Date (component)</label>
+							<div class="input-group date">
+								<input id="dateId2" type="text" class="form-control" datepicker ng-model="model.date2" placeholder="Enter a date"
+								export="myDatepicker" options="dateOptions"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="dateId3">Date (inline)</label>
+							<div id="dateId3" datepicker inline ng-model="model.date3" placeholder="Enter a date"
+								export="myDatepicker" options="dateOptions" ></div>
+						</div>
+						<div class="form-group">
+							<label for="dateId4">Date (range)</label>
+							<div id="dateId4" class="input-daterange input-group" id="datepicker" datepicker ng-model="model.range" placeholder="Enter a date"
+								export="myDatepicker" options="dateOptions">
+								<input type="text" class="input-sm form-control" name="start" ng-model="model.range.start"/>
+								<span class="input-group-addon">to</span>
+								<input type="text" class="input-sm form-control" name="end" ng-model="model.range.end"/>
+							</div>
 						</div>
 						<button type="submit" class="btn btn-default">Submit</button>
 					</form>
 					
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" ng-model="daterangeOptions.autoApply"> autoApply
+							<input type="checkbox" ng-model="dateOptions.clearBtn"> Clear Button
 						</label>
 					</div>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" ng-model="isEventonShow"> put event on show
+							<input type="checkbox" ng-model="dateOptions.autoclose"> autoclose
 						</label>
 					</div>
-					<h2>model.daterange</h2>
-					<pre>{{model.daterange | json }}</pre>
-					<h2>eventObject</h2>
-					<pre>{{eventObject | json }}</pre>
+					<h2>model</h2>
+					<pre>{{model | json }}</pre>
+					<h2>dateOptions</h2>
+					<pre>{{dateOptions | json }}</pre>
 				</div>
 				
 				
