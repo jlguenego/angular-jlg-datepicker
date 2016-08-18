@@ -1,0 +1,45 @@
+{
+  "name": "angular-jlg-datepicker",
+  "version": "0.0.1",
+  "description": "Angular wrapper on eternicode/bootstrap-datepicker",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "keywords": [
+    "angular",
+    "datepicker",
+    "bootstrap",
+    "eternicode"
+  ],
+  "author": "Jean-Louis GUENEGO",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "1.7.9",
+    "browserify": "13.1.0",
+    "browserify-css": "0.9.1",
+    "del": "2.2.1",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-uglify": "2.0.0",
+    "gulp-util": "3.0.7",
+    "lodash": "4.14.2",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0"
+  },
+  "dependencies": {
+    "angular": ">=1.2.14",
+    "bootstrap": ">=3.3.7",
+    "bootstrap-datepicker": ">=1.6.4",
+    "jquery": ">=2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlguenego/angular-jlg-datepicker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlguenego/angular-jlg-datepicker/issues"
+  },
+  "homepage": "https://github.com/jlguenego/angular-jlg-datepicker#readme"
+}
